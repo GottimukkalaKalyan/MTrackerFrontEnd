@@ -1,0 +1,153 @@
+.main-container{
+   width: 100vw;
+   height: 100vh;
+   margin: 0px;
+}
+.navbar-container{
+   padding: 10px;
+   background-image: linear-gradient(to right, #31623a,#070707);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.welcome-name{
+   margin: 0px;
+   color: white !important;
+   font-size: 20px;
+}
+@media screen and (min-width:768px) {
+   .names-card{
+      display: flex;
+   }
+}
+.home-container{
+   padding: 10px;
+   background-color: #a6a6a6;
+   min-height: 90%;
+}
+.home-page-heading{
+   margin: 0px;
+}
+.dash-board-cards-container{
+   background-color: #737373;
+   padding: 15px;
+   border-radius: 10px;
+   display: flex;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+.dash-board{
+   background-color: #070707;
+   padding: 10px;
+   color: white;
+   border-radius: 10px;
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+/* @media screen and (min-width:400px) {
+   .dash-board{
+      flex-grow: 1;
+      background-color: #070707;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+   }
+} */
+.final-value-dash-board{
+   flex-grow: 1;
+   background-color: #070707;
+   padding: 10px;
+   color: white;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.titles{
+   color: rgb(21, 231, 21);
+   display: flex;
+   align-items: center;
+}
+.title-credit-to{
+   color: red !important;
+   display: flex;
+}
+.profit-loss{
+   color: rgb(21, 231, 21);
+}
+.loss{
+   color: red;
+}
+.final-value-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.final{
+   width: 100%;
+   max-width: 400px;
+}
+.form-container{
+   display: flex;
+   justify-content: center;
+}
+.form-tag{
+   width: 100%;
+   max-width: 500px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+}
+.label{
+   font-weight: 500;
+
+}
+.note{
+   color: red;
+}
+.link-tag{
+   text-decoration: none;
+}
+.debit-and-credit-button{
+   padding: 0px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   text-align: start;
+}
+.debited-un-order-list{
+   padding: 0px;
+   width: 100%;
+}
+.ul-container{
+   width: 100%;
+   padding: 0px;
+}
+.list-headings{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+}
+.headings{
+   margin: 0px;
+   font-weight: bold;
+}
+.loading-view{
+   display: flex;
+   align-items: center;
+   color: rgb(21, 231, 21);
+   font-size: 20px;
+   flex-grow: 1;
+   margin-left: 10px;
+   margin-right: 0px;
+}
+.debit-loading-view{
+   display: flex;
+   align-items: center;
+   color: rgb(231, 21, 21);
+   font-size: 20px;
+   flex-grow: 1;
+   margin-left: 10px;
+   margin-right: 0px;
+}

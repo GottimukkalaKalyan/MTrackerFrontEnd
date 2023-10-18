@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter,Route,Routes} from "react-router-dom"
+import Home from './components/HomePage';
+// import History from './components/HistoryPage';
+import Login from './components/login';
+import RegisterUser from './components/register';
+// import ProtectedRoute from './components/authenticate';
+// import Cookies from 'js-cookie';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/register" element={<RegisterUser />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
