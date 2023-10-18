@@ -45,16 +45,13 @@
    border-radius: 10px;
    flex-grow: 1;
    flex-shrink: 1;
+   min-width: 100%;
 }
-/* @media screen and (min-width:400px) {
+@media screen and (min-width:400px) {
    .dash-board{
-      flex-grow: 1;
-      background-color: #070707;
-      padding: 10px;
-      color: white;
-      border-radius: 10px;
+      min-width: 300px !important;
    }
-} */
+}
 .final-value-dash-board{
    flex-grow: 1;
    background-color: #070707;
@@ -152,4 +149,12 @@
    flex-grow: 1;
    margin-left: 10px;
    margin-right: 0px;
+}
+.nothing-para{
+   margin: 0px;
+}
+.nothing-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

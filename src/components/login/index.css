@@ -31,3 +31,19 @@
    font-weight: 500;
    margin: 0px;
 }
+.terms-button{
+   border: none;
+   background-color: transparent;
+   outline: none;
+}
+.image-example{
+   width: 100%;
+}
+.para-of-popup{
+   margin: 0px;
+}
+.exapmple-container{
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 10px;
+}

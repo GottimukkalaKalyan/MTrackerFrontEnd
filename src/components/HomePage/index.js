@@ -378,6 +378,8 @@ class Home extends Component{
 
    getDebtedListOfData = () => {
       const {debitorsUsersData} = this.state
+      const NothingToShow = debitorsUsersData.length === 0
+
       return(
          <ul className="ul-container">
             <li className="bg-danger-subtle border border-primary-subtle rounded-3 list-headings mb-2">
@@ -387,15 +389,23 @@ class Home extends Component{
                <p className="headings">Date</p>
                <p className="headings">Delete</p>
             </li>
-            {debitorsUsersData.map(eachOne => (
+            {NothingToShow ? (
+               <div className="bg-primary-subtle border border-primary-subtle rounded-3 list-headings mb-2 nothing-container">
+                  <p className="nothing-para">Nothing to Show.!</p>
+               </div>
+            )
+             :
+             debitorsUsersData.map(eachOne => (
                <CreatingHistoryItem Data={eachOne} key={uuid()} deleteUser={this.deleteDebitor}/>
-            ))}
+            ))
+             }
          </ul>
       )
    }
 
    getCreditedListOfData = () => {
       const {creditorsUsersData} = this.state
+      const NothingToShow = creditorsUsersData.length === 0
       return(
          <ul className="ul-container">
             <li className="bg-danger-subtle border border-primary-subtle rounded-3 list-headings mb-2">
@@ -405,9 +415,17 @@ class Home extends Component{
                <p className="headings">Date</p>
                <p className="headings">Delete</p>
             </li>
-            {creditorsUsersData.map(eachOne => (
-               <CreatingCreditHistoryItem Data={eachOne} key={uuid()} deleteDebitUser={this.deleteCreditor}/>
-            ))}
+            {NothingToShow ? (
+               <div className="bg-primary-subtle border border-primary-subtle rounded-3 list-headings mb-2 nothing-container">
+                  <p className="nothing-para">Nothing to Show.!</p>
+               </div>
+            )
+             :
+               creditorsUsersData.map(eachOne => (
+                  <CreatingCreditHistoryItem Data={eachOne} key={uuid()} deleteDebitUser={this.deleteCreditor}/>
+               ))
+            }
+            
          </ul>
       )
    }

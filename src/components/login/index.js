@@ -127,6 +127,42 @@ const Login1 = () => {
                   <button type="button" class="btn btn-secondary w-100">Register</button>
                </Link>
             </div>
+
+            <button type="button" class="mt-3 terms-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+               Know More about MTracker
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                  <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">About</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <p className="para-of-popup mb-2">
+                        MTracker serves the purpose of providing a digital solution for individuals to manage their money effectively. 
+                        It's not just about tracking transactions but also about presenting this information in a user-friendly manner.
+                     </p>
+                     <div className="exapmple-container mb-2">
+                        <p className="para-of-popup mb-2">
+                           <b className="mb-2">Home View</b>
+                        </p>
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1697626000/Screenshot_506_re20yr.png" className="image-example" />
+                     </div>
+                     <div className="exapmple-container">
+                        <p className="para-of-popup mb-2">
+                           <b className="mb-2">Creditors View</b>
+                        </p>
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1697626316/Screenshot_507_pvdiyq.png" className="image-example" />
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understood</button>
+                  </div>
+               </div>
+            </div>
+            </div>
          </form>
       </div>
    )
