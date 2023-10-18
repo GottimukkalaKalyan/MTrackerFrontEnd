@@ -119,7 +119,7 @@ const RegisterUser = () => {
             {getLoadingStatus()}
             <div class="mb-3">
                <label for="nameOfTheUser" class="form-label"><b>Name of the User</b></label>
-               <input type="tel" class="form-control" id="nameOfTheUser" value={UserName} onChange={changeUserName}/>
+               <input type="text" class="form-control" id="nameOfTheUser" value={UserName} onChange={changeUserName}/>
             </div>
             <div class="mb-3">
                <label for="userMobileNumber" class="form-label"><b>Mobile Number</b></label>

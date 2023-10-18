@@ -22,19 +22,21 @@
 }
 .home-container{
    padding: 10px;
-   background-color: #a6a6a6;
+   background-image: linear-gradient(#121b3b,#392245);
    min-height: 90%;
 }
 .home-page-heading{
    margin: 0px;
 }
 .dash-board-cards-container{
-   background-color: #737373;
+   background-color: #2b2854;
+   /* background-image: linear-gradient(to right, #2b2854,#121b3b,#2b2854); */
    padding: 15px;
    border-radius: 10px;
    display: flex;
    gap: 15px;
    flex-wrap: wrap;
+   /* border: 1px solid #31623a; */
 }
 .dash-board{
    background-color: #070707;
